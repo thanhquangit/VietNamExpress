@@ -19,12 +19,14 @@ class CreateNewsTable extends Migration
             $table->string('slug')->nullable();
             $table->longText('summary')->nullable();
             $table->string('urlImage')->nullable();
+            $table->integer('users_id')->unsigned();
+            $table->foreign('users_id')->references('id')->on('users');
             $table->longText('content')->nullable();
-            $table->integer('qtyMember')->default(0);
-            $table->integer('highLight')->nullable();
-            $table->integer('hide')->nullable();
             $table->integer('type_id')->unsigned();
             $table->foreign('type_id')->references('id')->on('type');
+            $table->integer('qtyView')->default(0);
+            $table->integer('highLight')->nullable();
+            $table->integer('hide')->nullable();
             $table->timestamps();
         });
     }
