@@ -62,21 +62,10 @@
             </div>
         </div>
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 150px; overflow: hidden;">
-            <div><img u="image" src="images/1.png" /></div>
-            <div><img u="image" src="images/2.png" /></div>
-            <div><img u="image" src="images/3.png" /></div>
-            <div><img u="image" src="images/1.png" /></div>
-            <div><img u="image" src="images/2.png" /></div>
-            <div><img u="image" src="images/3.png" /></div>
-            <div><img u="image" src="images/1.png" /></div>
-            <div><img u="image" src="images/2.png" /></div>
-            <div><img u="image" src="images/3.png" /></div>
-            <div><img u="image" src="images/1.png" /></div>
-            <div><img u="image" src="images/2.png" /></div>
-            <div><img u="image" src="images/3.png" /></div>
-            <div><img u="image" src="images/1.png" /></div>
-            <div><img u="image" src="images/2.png" /></div>
-            <div><img u="image" src="images/3.png" /></div>
+            @foreach($adverbottom as $at)
+                <div><a href="{{$at->url}}"><img u="image" src="upload/quangcao/{{$at->urlImage}}" /></a></div>
+            @endforeach
+            
         </div>
         <style>
             .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av

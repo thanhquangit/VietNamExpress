@@ -5,62 +5,15 @@
         </div>
         <div class="clear"></div>
         <div class="cat-content">
-            <div class="col1">
-                <div class="news">
-                    <img class="images_news" src="upload/tintuc/ekaterinaparkhome2987311b-1406341819_1406341842_180x108.jpg" />
-                    <h3 class="title"><a href="#">Cô gái Ukraine 'gây bão' vì dùng mascara của nạn nhân MH17</a><span class="hit">20</span></h3>
-                    <div class="clear"></div>
+            @foreach($news_view as  $nv)
+                <div class="col1">
+                    <div class="news">
+                        <img class="images_news" src="upload/tintuc/{{$nv->urlImage}}" />
+                        <h3 class="title"><a href="#">{{$nv->title}}</a><span class="hit">{{count($nv->comment)}}</span></h3>
+                        <div class="clear"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="col1">
-                <div class="news">
-                    <img class="images_news" src="upload/tintuc/ekaterinaparkhome2987311b-1406341819_1406341842_180x108.jpg" />
-                    <h3 class="title"><a href="#">Cô gái Ukraine 'gây bão' vì dùng mascara của nạn nhân MH17</a><span class="hit">20</span></h3>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="col1">
-                <div class="news">
-                    <img class="images_news" src="upload/tintuc/ekaterinaparkhome2987311b-1406341819_1406341842_180x108.jpg" />
-                    <h3 class="title"><a href="#">Cô gái Ukraine 'gây bão' vì dùng mascara của nạn nhân MH17</a><span class="hit">20</span></h3>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="col1">
-                <div class="news">
-                    <img class="images_news" src="upload/tintuc/ekaterinaparkhome2987311b-1406341819_1406341842_180x108.jpg" />
-                    <h3 class="title"><a href="#">Cô gái Ukraine 'gây bão' vì dùng mascara của nạn nhân MH17</a><span class="hit">20</span></h3>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="col1">
-                <div class="news">
-                    <img class="images_news" src="upload/tintuc/ekaterinaparkhome2987311b-1406341819_1406341842_180x108.jpg" />
-                    <h3 class="title"><a href="#">Cô gái Ukraine 'gây bão' vì dùng mascara của nạn nhân MH17</a><span class="hit">20</span></h3>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="col1">
-                <div class="news">
-                    <img class="images_news" src="upload/tintuc/ekaterinaparkhome2987311b-1406341819_1406341842_180x108.jpg" />
-                    <h3 class="title"><a href="#">Cô gái Ukraine 'gây bão' vì dùng mascara của nạn nhân MH17</a><span class="hit">20</span></h3>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="col1">
-                <div class="news">
-                    <img class="images_news" src="upload/tintuc/ekaterinaparkhome2987311b-1406341819_1406341842_180x108.jpg" />
-                    <h3 class="title"><a href="#">Cô gái Ukraine 'gây bão' vì dùng mascara của nạn nhân MH17</a><span class="hit">20</span></h3>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="col1">
-                <div class="news">
-                    <img class="images_news" src="upload/tintuc/ekaterinaparkhome2987311b-1406341819_1406341842_180x108.jpg" />
-                    <h3 class="title"><a href="#">Cô gái Ukraine 'gây bão' vì dùng mascara của nạn nhân MH17</a><span class="hit">20</span></h3>
-                    <div class="clear"></div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>

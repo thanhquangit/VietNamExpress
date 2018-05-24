@@ -11,7 +11,7 @@
         <div id="header-vp">
             <div id="logo"><img src="images/logo.gif" /></div>
         </div>
-        <div id="menu-vp">
+        <div>
             @include('page.blocks.menu')
             <!--block/menu.php-->
         </div>
@@ -43,7 +43,7 @@
                 <!--blocks/cot_trai.php-->
             </div>
             <div id="content-main">
-                <!--PAGES-->
+                @yield('content')
             </div>
             <div id="content-right">
                 @include('page.blocks.right_colunm')
@@ -72,5 +72,6 @@
             </div>
         </div>
     </div>
+    @yield('script')
 </body>
 </html>

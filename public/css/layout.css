@@ -100,7 +100,7 @@ ul{ list-style:none}
 	#footer .SetHomePage{ background:url(../images/icon_resonesive.gif) no-repeat; width:20px; height:20px; background-position:0 0; display:inline-block; margin:0 5px 0 5px;}
 	#footer .top {background:url(../images/icon_resonesive.gif) no-repeat; width:20px; height:20px; background-position:-20px 0; display:inline-block; margin:0 5px 0 5px}
 	.thongtin-title .right a{ color:#666; font-weight:bold; margin:3px 5px 0 0px; display:block; float:left; border-right:solid 1px #E2E2E3; padding:0 5px }
-	#footer .ulBlockMenu{ width:160px; float:left}
+	#footer .ulBlockMenu{ width:100px; float:left}
 	#footer .ulBlockMenu a{ color:#333; font-size:12px; font-weight:normal}
 	#footer .ulBlockMenu a:hover{ color:#900;}
 	#footer .ulBlockMenu li{ margin-bottom:5px}
