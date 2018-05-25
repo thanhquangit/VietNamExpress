@@ -34,10 +34,10 @@
     <ul>
         <li><a href="./">Trang chủ</a></li>
         @foreach($category as $ct)
-	        <li><a href="">{{$ct->name}}</a>
+	        <li><a href="#">{{$ct->name}}</a>
 	            <ul>
 	            	@foreach($ct->type as $t)
-	                	<li><a href="">{{$t->name}}</a></li>
+	                	<li><a href="type/{{$t->id}}">{{$t->name}}</a></li>
 	               	@endforeach
 	            </ul>
 	        </li>

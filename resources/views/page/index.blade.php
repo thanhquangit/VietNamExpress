@@ -25,6 +25,7 @@
                 </ul>
             </div>
             <div id="right">
+                @include('page.blocks.general_information')
                 <!--blocks/thongtinchung.php-->
             </div>
         </div>

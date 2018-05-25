@@ -9,7 +9,7 @@
         </div>
         <div class="child-cat">
         	@foreach($ct->type as $t)
-            	<a href="#">{{$t->name}}</a>
+            	<a href="type/{{$t->id}}">{{$t->name}}</a>
             @endforeach
         </div>
         <?php
