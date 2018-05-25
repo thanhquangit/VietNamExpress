@@ -19,5 +19,6 @@ class HomeController extends Controller
 		$advertisement = Advertisement::where('position',1)->take(3)->get();
 		$adverbottom = Advertisement::where('position',2)->get();
    		return view('page.home',compact('news','news_view','advertisement','adverbottom'));
+		
    } 
 }
