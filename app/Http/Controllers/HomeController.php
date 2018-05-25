@@ -15,6 +15,7 @@ class HomeController extends Controller
 		$news_view = News::orderBy('qtyView','desc')->take(9)->get();
 		$advertisement = Advertisement::where('position',1)->take(3)->get();
 		$adverbottom = Advertisement::where('position',2)->get();
+<<<<<<< HEAD
 		$category = Category::all();
 		view()->share('category',$category);
 		view()->share('news',$news);
@@ -40,4 +41,9 @@ class HomeController extends Controller
     	$news_search = News::where('title','like',"%$key%")->orWhere('summary','like',"%$key%")->paginate(10);
     	return view('page.search',compact('key','news_search'));
     }
+=======
+   		return view('page.home',compact('news','news_view','advertisement','adverbottom'));
+		
+   } 
+>>>>>>> e614719e8a2f200f4317310157b6743c18ca2df1
 }
